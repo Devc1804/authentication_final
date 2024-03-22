@@ -153,6 +153,7 @@ class _loginPageState extends State<loginPage> {
       }).onError((error, stackTrace) {
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text(error.toString())));
+            print(error.toString());
       });
     }
   }
